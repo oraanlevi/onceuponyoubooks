@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONCEUPONYOU</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <!-- your existing header content -->
+    </header>
+    
+    <!-- New Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="tracking-in-expand-fwd-top">ONCE UPON YOU</h1>
+            <p>We Turn Your Memories Into a Legendary Story</p>
+        </div>
+    </section>
+    
+    <main>
+        <!-- your existing main content -->
+    </main>
+    
+    <header class="fade-in">
+        <div class="header-content">
+            <h1 class="site-title tracking-in-expand-fwd-top">ONCE UPON YOU</h1>
+
+            <nav class="main-nav">
+                <div class="nav-locations">
+                    <span>LOS ANGELES</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="mailto:youremail@example.com" class="nav-link">Mail</a></li>
+                    <li><a href="https://www.instagram.com/onceuponyoubooks/" class="nav-link" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="archives.html" class="nav-link">Archives</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="portfolio-container">
+            <h2 class="portfolio-title fade-in">ONCE UPON YOU</h2>
+            <div class="project-list">
+                <article class="project-item fade-in">
+                    <div class="project-header">
+                        <span class="project-number">1</span>
+                        <span class="project-year">2024</span>
+                        <h3 class="project-title">
+                            <a href="#" class="project-link">BACK</a>
+                        </h3>
+
+                    </div>
+                    <div class="project-image">
+                        <img src="2493B6CB-5060-4990-BB81-A7BEAAB9545C.png" alt="Back" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="image-fallback" style="display: none;">Image not available</div>
+                    </div>
+                </article>
+                <article class="project-item fade-in">
+                    <div class="project-header">
+                        <span class="project-number">3</span>
+                        <span class="project-year">2024</span>
+                        <h3 class="project-title">
+                            <a href="#" class="project-link">Creators</a>
+                        </h3>
+                    </div>
+                    <div class="project-image">
+                        <img src="56212db7-2045-4d4f-b3a9-5c5bbce2380a.png" alt="Arøne" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="image-fallback" style="display: none;">Image not available</div>
+                    </div>
+                </article>
+                <article class="project-item fade-in">
+                    <div class="project-header">
+                        <span class="project-number">4</span>
+                        <span class="project-year">2024</span>
+                        <h3 class="project-title">
+                            <a href="#" class="project-link">LA FAMOUS</a>
+                        </h3>
+                    </div>
+                    <div class="project-image">
+                        <img src="74bebef1-503c-4846-849b-cb910731d0a3.png" alt="LA FAMOUS" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="image-fallback" style="display: none;">Image not available</div>
+                    </div>
+                </article>
+                <article class="project-item fade-in">
+                    <div class="project-header">
+                        <span class="project-number">5</span>
+                        <span class="project-year">2023</span>
+                        <h3 class="project-title">
+                            <a href="#" class="project-link">LOGO COLLAB</a>
+                        </h3>
+                    </div>
+                    <div class="project-image">
+                        <img src="6c2d172f-e71d-4eae-bd03-572df9a2881a.png" alt="SVR EFFECT" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="image-fallback" style="display: none;">Image not available</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fade-in">
+        <div class="footer-content">
+            <div class="footer-title">ONCEUPONYOU</div>
+            <blockquote class="footer-quote">
+                <p></p>
+                <p class="quote-decoration"></p> love it
+                <cite></cite>
+            </blockquote>
+            <div class="footer-credit">
+                <a href="#" class="credit-link"></a>© 2025 all rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        items.forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>

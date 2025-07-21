@@ -1,10 +1,10 @@
 /* ========== Animations ========== */
 
-.tracking-in-expand-fwd-top {
+//*.tracking-in-expand-fwd-top {
     animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-@keyframes tracking-in-expand-fwd-top {
+ //*@keyframes tracking-in-expand-fwd-top {
   0% {
     letter-spacing: -0.5em;
     transform: translateZ(-700px) translateY(-500px);
@@ -102,13 +102,7 @@ a:hover {
 }
 
 /* Header */
-header {
-    background: linear-gradient(to right, #19dcea, #b22cff, #ea2222, #f5be10);
-    background-size: 400% 100%;
-    animation: color-change-4x 12s ease infinite alternate;
-    padding: 20px;
-    border-bottom: 1px solid #000000;
-}
+
 
 .header-content {
     max-width: 1200px;
@@ -120,6 +114,12 @@ header {
     font-weight: bold;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
+}
+.main-cover {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .main-nav {
@@ -202,6 +202,9 @@ main {
 }
 
 /* Image Size Update */
+
+
+
 .project-image {
     width: 100%;
     max-width: 400px;
